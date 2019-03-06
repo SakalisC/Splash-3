@@ -28,7 +28,7 @@ directory.
 ## Tarballs
 
 For tarball releases please visit our website at
-[etascale.com](https://argodsm.com/vips%20coherence/splash-3.html).
+[etascale.com](https://argodsm.com/software/splash-3.html).
 
 ## Citing Splash-3
 
