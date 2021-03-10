@@ -7,7 +7,7 @@ all:
 	$(MAKE) -C apps/ocean/non_contiguous_partitions
 	$(MAKE) -C apps/radiosity
 	$(MAKE) -C apps/raytrace
-	# $(MAKE) -C apps/volrend
+	$(MAKE) -C apps/volrend
 	$(MAKE) -C apps/water-nsquared
 	$(MAKE) -C apps/water-spatial
 	$(MAKE) -C kernels/cholesky
