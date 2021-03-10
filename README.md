@@ -46,6 +46,10 @@ required. In addition, the M4 macro processor is necessary for generating the
 source files in the first place. On Ubuntu and similar systems, you can install
 the `m4` and `ivtools-dev` packages.
 
+If you are wanting to use a cross-compile toolchain, set the `TOOLCHAIN_PREFIX`
+environment variable to the prefix required to find the cross-compile tools,
+e.g. `${TOOLCHAIN_PREFIX}gcc` should be found for a cross-compiling `gcc`.
+
 Some benchmarks expect their inputs to be at very specific paths relative to the
 working directory, so it is recommended to change the working directory to the
 benchmark folder before executing it.

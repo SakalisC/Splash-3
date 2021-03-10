@@ -11,7 +11,7 @@ OBJS   = glibps.o
 include ../../../Makefile.config
 
 $(TARGET): $(OBJS)
-	$(CROSS_COMPILE)ar crv $(TARGET) $(OBJS)
+	$(TOOLCHAIN_PREFIX)ar crv $(TARGET) $(OBJS)
 
 clean:
 	rm -rf *.o $(TARGET)
