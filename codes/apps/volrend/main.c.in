@@ -447,7 +447,7 @@ void Allocate_Shading_Table(PIXEL **address1, long length)
 /*  POSSIBLE ENHANCEMENT:  If you want to replicate the shade table,
     replace the macro with a simple malloc in the line below */
 
-  *address1 = (PIXEL *)NU_MALLOC(length,sizeof(PIXEL),0);
+  *address1 = (PIXEL *)NU_MALLOC(length*sizeof(PIXEL),0);
 
   if (*address1 == NULL)
     Error("    No space available for table.\n");
