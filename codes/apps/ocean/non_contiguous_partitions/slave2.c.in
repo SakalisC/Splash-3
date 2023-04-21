@@ -714,9 +714,9 @@ void slave2(long procid, long firstrow, long lastrow, long numrows, long firstco
 /* after computing its private sum, every process adds that to the
    shared running sum psiai  */
 
-   LOCK(locks->psibilock)
+   LOCK(locks->psiailock)
    global->psiai = global->psiai + psiaipriv;
-   UNLOCK(locks->psibilock)
+   UNLOCK(locks->psiailock)
 
    BARRIER(bars->sl_phase_7,nprocs)
 
